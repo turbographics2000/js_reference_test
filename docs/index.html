@@ -3,13 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script src="monsters.js"></script>
-    <script>
-      window.onload = function() {
-        monsterSelect.onchange = function() {
-          result.textContent = 'hp:' + monsters[this.value].hp + ', attack:' + monsters[this.value].attack;
-        } 
-      }
-    </script>
+    <script src="main.js"></script>
   </head>
   <body>
     <select id="monsterSelect">
