@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="monsters.js"></script>
+    <script>
+      window.onload = function() {
+        monsterSelect.onchange = function() {
+          result.textContent = 'hp:' + monsters[this.value].hp + ', attack:' + monsters[this.value].attack;
+        } 
+      }
+    </script>
+  </head>
+  <body>
+    <select id="monsterSelect">
+      <option value="スライム">スライム</option>
+      <option value="スライムベス">スライムベス</option>
+      <option value="ドラキー">ドラキー</option>
+    </select>
+    <div id="result"></div>
+  </body>
+</html>
